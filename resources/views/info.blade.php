@@ -87,6 +87,22 @@
 <ul >
 <li><a href="api/articles">api/articles</a></li>
 <li>GET, POST, PUT, DELETE
+<br/>Use Postman to test login, logout, listing as logged-in user
+<li>curl -X POST http://localhost:8000/api/login \
+<br/>-H "Accept: application/json" \
+<br/>-H "Content-type: application/json" \
+<br/>-d "{\"email\": \"admin@test.com\", \"password\": \"tutorial\" }"
+</li>
+<li>curl -X POST http://localhost:8000/api/logout \
+<br/>-H "Accept: application/json" \
+<br/>-H "Content-Type: application/json"  \
+<br/>-H "Authorization: Bearer if2LdjBBLlDDYR1ok7TIsF8Tdtw1jD51mjQ0bkVVlimEofI8yGwYGaNlNOdP"
+</li>
+<li>curl -X GET http://localhost:8000/api/articles \
+<br/>-H "Accept: application/json" \
+<br/>-H "Content-Type: application/json"  \
+<br/>-H "Authorization: Bearer if2LdjBBLlDDYR1ok7TIsF8Tdtw1jD51mjQ0bkVVlimEofI8yGwYGaNlNOdP"
+</li>
 </ul>
 </div>
                 <div class="links">
@@ -96,6 +112,7 @@
 		<a href="http://ddecode.com/hexdecoder/?results=409e01fbc6f68f1c4208bc628dc7c095">DDencode tools</a>
                 </div>
             </div>
+Notes by Nicholas (tboxmy)
         </div>
     </body>
 </html>
