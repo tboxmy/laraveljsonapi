@@ -1,1 +1,3 @@
-php artisan serve --host=10.1.24.248 --port=8000
+# place your IP address
+IPADDRESS=127.0.0.1
+php artisan serve --host=$IPADDRESS --port=8000
