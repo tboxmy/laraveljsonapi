@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/~dataware/mysimpleserver/'),
+    //'url' => env('APP_URL', 'http://localhost/~dataware/mysimpleserver/'),
+    'url' => env('APP_URL', 'http://localhost/'),
 
     /*
     |--------------------------------------------------------------------------
